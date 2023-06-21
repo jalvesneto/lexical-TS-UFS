@@ -31,6 +31,7 @@
     "collab": "cross-env HOST=localhost PORT=1234 npx y-websocket-server",
     "validation": "npx ts-node --cwdMode packages/lexical-playground/src/server/validation.ts",
     "test-unit": "jest --selectProjects unit --testPathPattern",
+    "test-ts": "jest --selectProjects testsoftware",
     "test-unit-watch": "npm run test-unit -- --watch --coverage=''",
     "test-e2e-chromium": "cross-env E2E_BROWSER=chromium playwright test --project=\"chromium\"",
     "test-e2e-firefox": "cross-env E2E_BROWSER=firefox playwright test --project=\"firefox\"",
