@@ -212,7 +212,7 @@ module.exports = {
       },
       preset: 'ts-jest',
       testEnvironment: 'jsdom',
-      testMatch: ['**/TestesAtv01.test.ts'],
+      testMatch: ['**/TestesAtv01.test.ts', '**/TestesAtv02.test.ts'],
       transform: {
         '^.+\\.jsx?$': 'babel-jest',
         '^.+\\.tsx$': 'ts-jest',
