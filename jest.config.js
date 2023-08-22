@@ -131,6 +131,12 @@ module.exports = {
         },
       },
       moduleNameMapper: {
+        '@lexical/react/LexicalBlockWithAlignableContents':
+          '<rootDir>packages/lexical-react/src/LexicalBlockWithAlignableContents.tsx',
+        '@lexical/react/LexicalDecoratorBlockNode':
+          '<rootDir>/packages/lexical/src/nodes/LexicalDecoratorNode.ts',
+        '@lexical/react/LexicalNode':
+          '<rootDir>/packages/lexical/src/LexicalNode.ts',
         '^./dist/(.+)': './src/$1',
         '^@lexical/clipboard$':
           '<rootDir>/packages/lexical-clipboard/src/index.ts',
@@ -212,7 +218,8 @@ module.exports = {
       },
       preset: 'ts-jest',
       testEnvironment: 'jsdom',
-      testMatch: ['**/TestesAtv01.test.ts', '**/TestesAtv02.test.ts'],
+      testMatch: ['**/AV2_Testes.test.ts'],
+      // testMatch: ['**/TestesAtv01.test.ts', '**/TestesAtv02.test.ts', '**/AV2_Testes.test.ts'],
       transform: {
         '^.+\\.jsx?$': 'babel-jest',
         '^.+\\.tsx$': 'ts-jest',
